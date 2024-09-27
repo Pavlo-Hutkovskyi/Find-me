@@ -1,0 +1,115 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+  const popupQuerySelector = "#listid";
+  const popupEl = document.querySelector(popupQuerySelector);
+  const popupBttn = document.querySelector("#btn");
+
+  popupBttn.addEventListener("click", () => {
+    setTimeout(() => {
+      if (!popupEl.classList.contains("show")) {
+        popupEl.classList.add("show");
+      }
+    }, 250);
+  });
+
+    /////////////////////////////// не трожжжжжжжжжж
+    function modal_confirm_create(message, no, yes, target, src) {
+        $('#modal_confirm_message').text(message);
+        $('#modal_confirm_no').text(no);
+        $('#modal_confirm_yes').text(yes);
+        $('#modal_confirm').attr("target", target);
+        $('#modal_confirm').attr("src", src);
+    }
+    function showModalOfCreatingApplication() {
+        modal_confirm_create("Чи впевнені Ви, що хочете створити оголошення?", "Відмінити", "Підтвердити", "yes");
+        $('#modal_confirm').modal('show');
+    }
+    function showModalOfConfirmationDeletingAccount() {
+        modal_confirm_create("Чи впевнені Ви, що хочете видалити акаунт?", "Відмінити", "Підтвердити", "sure");
+        $('#modal_confirm').modal('show');
+    }
+    function showModalOfConfirmationLogingOutAccount() {
+        modal_confirm_create("Чи впевнені Ви, що хочете вийти з акаунту?", "Відмінити", "Підтвердити", "sure");
+        $('#modal_confirm').modal('show');
+    }
+
+    let click = document.querySelector('.click')
+    let list = document.querySelector('.list')
+    let container1 = document.getElementById('menuid');
+    let container2 = document.getElementById('listid');
+    click.addEventListener("click",()=>{
+        list.classList.toggle('newlist');
+    })
+    document.addEventListener('click', function(b) {
+        if (!container1.contains(b.target)) {
+            container2.style.display = "none";
+            list.classList.toggle('newlist');
+        }
+        if (container1.contains(b.target)) {
+            container2.style.display = "block";
+        }
+    });
+</script>
+<script>
+    let click_2 = document.querySelector('.click_2')
+    let list_2 = document.querySelector('.list_2')
+    let container_1 = document.getElementById('menuid2');
+    let container_2 = document.getElementById('listid2');
+    click_2.addEventListener("click",()=>{
+        container_2.style.display = "block";
+        list_2.classList.toggle('newlist2');
+    })
+    document.addEventListener('click', function(e) {
+        if (!container_1.contains(e.target)) {
+            container_2.style.display= "none";
+            list_2.classList.toggle('newlist2');
+        }
+        if(container_1.contains(e.target)){
+            container_2.style.display = "block";
+        }
+    });
+
+    /////////////////////////// не руш, бу кусь
+    function Toast (buttonId, innerClass, message){
+        const toastTrigger = document.querySelector(buttonId)
+        const toastDiv = document.querySelector('#liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+            const toast = new bootstrap.Toast(toastDiv)
+            $(innerClass).text(message);
+            toast.show()
+        })}
+    }
+    Toast('#liveToastBtn1', '.toast-body', 'Ваші ініціали змінено!')
+    Toast('#liveToastBtn2', '.toast-body', 'Ваш номер телефону змінено!')
+    Toast('#liveToastBtn3', '.toast-body', 'Вашу пошту змінено!', 'profile')
+    Toast('#liveToastBtn4', '.toast-body', 'Ваше місцерозташування змінено!')
+    Toast('#liveToastBtn5', '.toast-body', 'Ваш пароль змінено!')
+    Toast('#liveToastBtn6', '.toast-body', 'Оголошення видалено!')
+    Toast('#liveToastBtn7', '.toast-body', 'Оголошення змінено!')
+    Toast('#liveToastBtn8', '.toast-body', 'Пару з партнером скасовано!')
+    Toast('#liveToastBtn9', '.toast-body', 'Взаємодопомога успішно завершена!')
+    Toast('#liveToastBtn10', '.toast-body', 'Ми продовжимо шукати Вам партнера для допомоги!')
+    Toast('#liveToastBtn11', '.toast-body', 'Взаємодопомога успішно завершена!', 'main')
+
+    function ActiveBorder (buttonId, elementId) {
+        if(window.location.pathname === buttonId) {
+        const element = document.querySelector(elementId);
+        element.classList.add("ifClick");}
+    }
+    ActiveBorder('/profile', '#profile');
+    ActiveBorder('/info', '#info');
+    ActiveBorder('/main', '#main');
+    ActiveBorder('/volunteerApplication', '#volunteerApplication');
+    ActiveBorder('/volunteerApplication', '#volunteerApplication');
+</script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+

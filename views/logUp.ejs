@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<%- include('head.ejs') %>
+<body>
+    <form>
+        <div class="regPage">
+            <h1>Реєстрація</h1>
+            <div class="CenteredCard">
+                <div class="logUpDiv">
+                    <img class="pic" src="views/usedPictures/male.svg" alt="male">
+                    <img class="pic" src="views/usedPictures/female.svg" alt="female">
+                </div>
+            </div>
+            <h2>Ім'я та Прізвище:</h2>
+            <div class="form-floating reg" id = 'name'>
+                <input type="text" class="form-control" id="floatingDescription1" placeholder="name">
+                <label for="floatingDescription">Ім'я...</label>
+            </div>
+            <div class="form-floating reg" id = 'surname'>
+                <input type="text" class="form-control" id="floatingDescription2" placeholder="surname">
+                <label for="floatingDescription">Прізвище...</label>
+            </div>
+            <h2>Контактні дані:</h2>
+            <h3>Номер телефону:</h3>
+            <div class="form-floating reg special" id = 'email'>
+                <input type="number" class="form-control" id="floatingDescription3" placeholder="phoneNumber">
+                <label for="floatingDescription">+38 (0**) *** ** **</label>
+            </div>
+            <h3>Пошта:</h3>
+            <div class="form-floating reg special" id = 'phone'>
+                <input type="text" class="form-control" id="floatingDescription4" placeholder="email">
+                <label for="floatingDescription">email@gmail.com...</label>
+            </div>
+            <div>
+                <h2>Пароль:</h2>
+                <div class="form-floating reg" id = 'password'>
+                    <input type="password" class="form-control" id="floatingDescription5" placeholder="password">
+                    <label for="floatingDescription">Пароль...</label>
+                </div>
+                <div class="form-floating reg">
+                    <input type="password" class="form-control" id="floatingDescription6" placeholder="password">
+                    <label for="floatingDescription">Підтвердіть пароль...</label>
+                </div>
+            </div>
+            <h2>Місцерозташування:</h2>
+            <div>
+                <div>
+                    <select class="select_box_1 select_box"></select>
+                </div>
+                <div>
+                    <select class="select_box_2 select_box_special"></select>
+                </div>
+            </div>
+            <div class="butt">
+    <!--            <button class="confirm btn btn-dark registration" type="button">Створити</button>-->
+                <a class="confirm btn btn-dark registration" role="button" type="button"  id = 'create'>Створити</a>
+                <a class="btn btn-dark registration" role="button" href="logIn">Увійти</a>
+            </div>
+        </div>
+    </form>
+    <script src="../routes/LogUp.js"></script>
+    <%- include('toast.ejs') %>
+</body>
+</html>

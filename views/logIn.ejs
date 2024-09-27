@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('head.ejs') %>
+<body>
+    <form action='/login' method='post' >
+        <div class="regPage logIn">
+            <h1>Увійти</h1>
+            <h2>Номер телефону:</h2>
+            <div class="form-floating reg">
+                <input type="number" class="form-control" id="floatingDescriptionN" placeholder="phoneNumber" name="phoneNumber">
+                <label for="floatingDescription">+38 (0**) *** ** **</label>
+            </div>
+            <h2>Пароль:</h2>
+            <div class="form-floating reg">
+                <input type="password" class="form-control" id="floatingDescriptionP" placeholder="password" name="password">
+                <label for="floatingDescription">Пароль...</label>
+            </div>
+            <div class="butt">
+<!--            <a class="log btn btn-dark registration" role="button">Увійти</a>-->
+                <button class="btn btn-dark registration" type="button">Створити</button>
+                <button class="log btn btn-dark registration " formaction="/logIn" type="submit">Увійти</button>
+            </div>
+        </div>
+    </form>
+    <script src="../routes/LogIn.js"></script>
+    <%- include('toast.ejs') %>
+</body>
+</html>

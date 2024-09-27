@@ -1,0 +1,510 @@
+<div class="testInfo">
+    <div class="CenteredCard">
+        <img src="/views/usedPictures/logo.svg" alt="logo" class="logo">
+    </div>
+    <div>
+        <h1>Про нас</h1>
+        <p class="textInstruction">
+            Сайт створений на волонтерських засадах групою студентів для полегшення життя людей
+            у гарячих точках країни після того, як Російська федерація розпочала повномасштабний
+            наступ на незалежну Україну. Команда працювала над проєктом в обмеженому часі, проте
+            намагалась зробити корисний додаток в цей нелегкий для українців період. Надіємось
+            на близьку перемогу і все буде Україна!
+        </p>
+    </div>
+    <hr class="divider">
+    <div>
+        <h1>Що робить сайт?</h1>
+        <p class="textInstruction">
+            Платформа поєднує між собою по двох людей за схемою: попит → пропозиція. Де попит:
+            людина, яка потребує допомогу, і пропозиція: людина, яка допомогу може надати.
+            Оскільки багато куди не доходить гуманітарна допомога, люди можуть допомогти один одному
+            самі. 
+        </p>
+    </div>
+    <hr class="divider">
+    <div>
+        <h1>Як користуватись сайтом?</h1>
+        <p class="textInstruction">
+            Кожен користувач має панель керування з п'ятьма розділами, що знаходиться на нижній панелі:
+        </p>
+        <ol>
+            <li>Профіль користувача</li>
+            <li>Інформаційна сторінка</li>
+            <li>Головна сторінка</li>
+            <li>Волонтерська форма для заповнення оголошення</li>
+            <li>Форма потреби допомоги для заповнення оголошення</li>
+        </ol>
+        <div class="controlPanelInfo">
+            <div class="item"><button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Профіль" data-bs-content="Тут зберігаються Ваші оголошення та інформація про Вас" type="button" class="btn btn-dark">
+                    <img src="/views/icons/profile.svg" alt="profile" class="controlIcon">
+                </button></div>
+            <div class="item"><button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Інформаційна сторінка" data-bs-content="Тут Ви можете знайти відповіді на свої запитання та інструкцію по користуванню сайтом" type="button" class="btn btn-dark">
+                    <img src="/views/icons/info.svg" alt="info" class="controlIcon">
+                </button></div>
+            <div class="item"><button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Головна сторінка" data-bs-content="Тут Ви можете побачити оголошення інших людей, які потребують допомоги" type="button" class="btn btn-dark">
+                    <img src="/views/icons/home.svg" alt="home" class="controlIcon">
+                </button></div>
+            <div class="item"><button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Волонтерське оголошення" data-bs-content="Тут Ви можете написати своє волонтерське оголошення, щоб допомогти комусь" type="button" class="btn btn-dark">
+                    <img src="/views/icons/volunteer.svg" alt="volunteer" class="controlIcon">
+                </button></div>
+            <div class="item"><button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Оголошення на допомогу" data-bs-content="Тут Ви можете написати своє оголошення з проханням по допомогу" type="button" class="btn btn-dark">
+                    <img src="/views/icons/needer.svg" alt="needer" class="controlIcon">
+                </button></div>
+        </div>
+        <p class="textInstruction">
+            Знаючи про нижню можемо поговорити про верхню панель почнемо зі сторінки профілю:
+        </p>
+        <div class="infoApplication backgroundA">
+            <button  data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Сповіщення" data-bs-content="Тут Ви будете отримувати повідомлення від платформи, якщо вони є, над дзвіночком буде кружечок як зараз" class="clickInfo clickInfoBell">
+                <span class="fa-stack">
+                    <img src="/views/icons/bell.svg" alt="bell" class="bellIcon">
+                <i class="fa fa-circle fa-stack-1x circle"></i>
+                </span>
+            </button>
+            <button  data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Налаштування" data-bs-content="Тут Ви можете змінити особисті дані, або виконати дії над своїм обліковим записом" class="clickInfo">
+                <img src="/views/icons/settings.svg" alt="info" class="headerControlIcon">
+            </button>
+        </div>
+        <p class="textInstruction">
+            Профіль користувача надає можливість керувати власним обліковим записом, тобто змінювати дані, які були введені при створенні запису в налаштуваннях.
+        </p>
+        <div class="CenteredCard">
+            <div class="listInfo infoApplication" >
+                <div class = "dropwindow window1">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Змініть свої дані тут" data-bs-content="Не обов'язково заповнювати два поля, лише те, яке хочте змінити" class="links link1">Редагувати ім'я або прізвище</button>
+                    <div class="dropInfo info1">
+                        <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Текст може бути тільки українською" class="transparentButton">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingDescriptionChange1.1" placeholder="name">
+                                <label for="floatingDescription">Нове ім'я...</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingDescriptionChange1.2" placeholder="surname">
+                                <label for="floatingDescription">Нове прізвище...</label>
+                            </div>
+                        </button>
+                        <div class="formButtons">
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Ви можете натиснути і зміни не збережуться">Скасувати</button>
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Після підтвердження, дані будуть змінені та їх не можна буде відновити">Змінити</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class = "dropwindow window2">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Змініть свої дані тут" data-bs-content="Обов'язково вкажіть, всі 12 цифр телефону" class="links link2">Редагувати номер телефону</button>
+                    <div class="dropInfo info2">
+                        <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content='Можуть бути вказані лише цифри та символ "+"' class="transparentButton">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="floatingDescriptionChange2" placeholder="phoneNumber">
+                                <label for="floatingDescription">Новий номер телефону...</label>
+                            </div>
+                        </button>
+                        <div class="formButtons">
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Ви можете натиснути і зміни не збережуться">Скасувати</button>
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Після підтвердження, дані будуть змінені та їх не можна буде відновити">Змінити</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class = "dropwindow window3">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Змініть свої дані тут" data-bs-content="@ використовується лише один раз у пошті" class="links link3">Редагувати пошту</button>
+                    <div class="dropInfo info3">
+                        <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Допустимий текст: латиниця, символи та цифри" class="transparentButton">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingDescriptionChange3" placeholder="email">
+                                <label for="floatingDescription">Нова пошта...</label>
+                            </div>
+                        </button>
+                        <div class="formButtons">
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Ви можете натиснути і зміни не збережуться">Скасувати</button>
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Після підтвердження, дані будуть змінені та їх не можна буде відновити">Змінити</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class = "dropwindow window4">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Змініть свої дані тут" data-bs-content="Точнішого місцерозташування ніж район області вказати не можна в цілях безпеки" class="links link4">Редагувати місцерозташування</button>
+                    <div class="dropInfo info4">
+                        <div>
+                            <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Вам потрібно обов'язково вказати і область, і район" class="transparentButton">
+                                <div>
+                                    <select class="select_box_1 select_box_change"></select>
+                                </div>
+                                <div>
+                                    <select class="select_box_2 select_box_change"></select>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="formButtons">
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Ви можете натиснути і зміни не збережуться">Скасувати</button>
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Після підтвердження, дані будуть змінені та їх не можна буде відновити">Змінити</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id= "window5" class = "dropwindow window5">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Змініть свої дані тут" data-bs-content="Ми рекомендуємо використовувати в паролях не менше восьми символів, чергувати великі ма маленькі літери, також не забуваючи про цифри та символи для кращої безпеки" class="links link5">Змінити пароль</button>
+                    <div id= "info5" class="dropInfo info5">
+                        <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Ви можете переглянути прихований пароль" class="transparentButton">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingDescriptionChange5.1" placeholder="password">
+                                <label for="floatingDescription">Старий пароль...</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingDescriptionChange5.2" placeholder="password">
+                                <label for="floatingDescription">Новий пароль...</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingDescriptionChange5.3" placeholder="password">
+                                <label for="floatingDescription">Підтвердіть пароль...</label>
+                            </div>
+                        </button>
+                        <div class="formButtons">
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Ви можете натиснути і зміни не збережуться">Скасувати</button>
+                            <button class="form_button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Після підтвердження, дані будуть змінені та їх не можна буде відновити">Змінити</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Видаляючи акаунт Ви більше не зможете його відновити" class="links" role="button">Видалити акаунт</button>
+                <hr>
+                <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Покинувши акаунт Ви не зможете переглядати оголошення" class="links" role="button">Вийти з акаунту</button>
+            </div>
+        </div>
+        <p class="textInstruction">
+            Також Ви отримуєте сповіщення від системи, про те, що Вам знайшли "партнера", або що хтось видалив своє
+            оголошення, і що Ви хочете робити зі своїм:
+        </p>
+        <div class="CenteredCard">
+            <div class="notificationInfo infoApplication">
+                <div class="try">
+                    <p>Ми знайшли Вам <em>Волонтера</em> на оголошення 22.04.2022 22:33 перейдіть за <a href="">посиланням</a> та перегляньте контактні дані</p>
+                </div>
+                <div class="try">
+                    <p><em>Волонтер</em> видалив оголошення пов'язане з Вашим <em>потребуючим</em>:</p>
+                    <div class="partApplication">
+                        <div class="partApplicationHeader">
+                            <p class="date">22.04.2022 22:33</p>
+                            <p class="urgent">ТЕРМІНОВО</p>
+                        </div>
+                        <p>Інсулін 2 ампули</p>
+                    </div>
+                    <p>Допомога виконана успішно чи продовжити пошук пари для допомоги?</p>
+                    <div class="notificationFooter">
+                        <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Платформа знайде Вам нового партнера, якщо оголошення не виконано" class="btn btn-light">Шукати далі</button>
+                        <button class="btn btn-light" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Оголошення перейде у статус завершеного">Виконано</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="textInstruction before">
+            В профілі перше, що відображається на екрані - це Ваша особиста "картка", де подана вся інформація, яку Ви заповнили
+            при реєстрації:
+        </p>
+        <div class="CenteredCard">
+            <div class="profileCardInfo">
+                <div class="profilePhotoInfo">
+                    <div><img src="/views/usedPictures/male.svg" alt="woman"></div>
+                </div>
+                <div class="profileInfo2">
+                    <div><p>Ім'я Прізвище</p><p>Місцезнаходження:</p><p>Область,</p><p>Район області</p><p>Номер телефону</p><p>Email</p></div>
+                </div>
+            </div>
+        </div>
+        <p class="textInstruction after">
+            Також профілі Ви можете бачити оголошення, які Ви створили: перша колонка оголошень, які були створені та
+            ще не з'єднані:
+        </p>
+        <div class="infoApplication">
+            <div class="applicationCard">
+                <div class="applicationHeader">
+                    <div class="date">
+                        <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Дата і час створення оголошення" class="transparentButton">
+                            <p class="text">22.04.2022 22:33</p>
+                        </button>
+                    </div>
+                    <div class="markButton">
+                        <div class = "threePoints"><button class = "click_3 adding"><img src="/views/icons/dots.svg" alt="threeDots" class="dotsIcon"></button>
+                            <div class = "dropPoints">
+                                <a class="btn editingApp" role="button">Видалити оголошення</a>
+                                <a class="btn editingApp" role="button">Редагувати оголошення</a>
+                            </div></div>
+                        <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Вказує на терміновість звернення" class="transparentButton">
+                            <i class="fa-solid fa-exclamation fa-xl"></i>
+                        </button>
+                        <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Позначка вказує на те, що оголошення про допомогу" class="transparentButton">
+                            <i class="fa-solid fa-heart-crack fa-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="applicationText">
+                    <p>Моє ім'я та прізвище</p>
+                    <p>Я знаходжусь в області, районі</p>
+                    <p>Мені потрібні ліки</p>
+                    <p>Інсулін 2 ампули</p>
+                    <p>ТЕРМІНОВО</p>
+                </div>
+            </div>
+        </div>
+        <p class="textInstruction">
+            Друга ж колонка відповідає за вже з'єднані з "партнером" оголошення, там Ви можете побачити інформацію
+            про іншого користувача, з яким Вас з'єднало для подальшого контакту:
+        </p>
+        <div class="applicationCardInProgressInfo infoApplication">
+            <div class="applicationHeader">
+                <div class="date dateInfo">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Дата і час коли Вас з'єднало з партнером" class="transparentButton">
+                        <p class="text2">23.04.2022 13:21</p>
+                    </button>
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Дата і час коли було створено Ваше оголошення" class="transparentButton">
+                        <p class="answer">↪ 22.04.2022 22:33</p>
+                    </button>
+                </div>
+                <div class="markButton">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Позначка вказує на те, що оголошення волонтерське" class="transparentButton">
+                        <i class="fa-solid fa-heart fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="applicationText">
+                <p>Категорія: ліки</p>
+                <p>Я прошу: Інсулін 2 ампули</p>
+                <p>Мені пропонують: Інсулін 10 амп.</p>
+                <p>Волонтер: <strong>Ім'я</strong></p>
+                <p>Контактні дані: +38 0** *** ** **</p>
+                <p class="email">email@gmail.com</p>
+            </div>
+            <div class="applicationInProgressFooter">
+                <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Скасовує Вашу пару з партнером та шукає наступного підходящого" role="button" class="btn btn-light"><img src="/views/icons/cancel.svg" alt="cancel" class="cancelIcon"></button>
+                <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title data-bs-content="Успішно завершує ваше оголошення" role="button" class="btn btn-light"><img src="/views/icons/finish.svg" alt="finish" class="finishIcon"></button>
+            </div>
+        </div>
+        <p class="textInstruction">
+            На інформаційній сторінці зі функціональних кнопок ми маємо все ті ж сповіщення, та кнопку зміни фону на верхній панелі:
+        </p>
+        <div class="infoApplication backgroundA">
+            <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Сповіщення" data-bs-content="Коли у вас немає сповіщень, дзвіночок не має кружечка зверху" class="clickInfo clickInfoBell">
+                    <img src="/views/icons/bell.svg" alt="bell" class="bellIcon">
+            </button>
+            <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Зміна теми" data-bs-content="Є дві теми які ви можете змінити, світла і темна" class="clickInfo">
+                <img src="/views/icons/theme.svg" alt="info" class="headerControlIcon">
+            </button>
+        </div>
+        <p class="textInstruction">
+            І щоб повність закінчити з верхніми панелями вкажемо ще таку ж на головному меню, зі сповіщеннями (яких можна
+            дістатись всюди) та кнопкою сортування оголошень за різними параметрами:
+        </p>
+        <div class="infoApplication backgroundA">
+            <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Сповіщення" data-bs-content="Все та ж інформація" class="clickInfo clickInfoBell">
+                    <img src="/views/icons/bell.svg" alt="bell" class="bellIcon">
+            </button>
+            <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title="Сортування" data-bs-content="Оголошення на головній сторінці Ви можете сортувати за двома категоріями" class="clickInfo">
+                <img src="/views/icons/sort.svg" alt="info" class="headerControlIcon">
+            </button>
+        </div>
+        <p class="textInstruction">
+            Натискаючи на кнопку ми побачимо ось таке випадаюче меню, на першій половині якого можна обрати лише один
+             параметр, а на другій вже декілька:
+        </p>
+        <div class="CenteredCard">
+            <div class="listInfo infoApplication sort" >
+                <form>
+                    <p>
+                        По місцеперебуванню:
+                    </p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label sortRadio" for="flexRadioDefault1">
+                            По всій Україні
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label sortRadio" for="flexRadioDefault2">
+                            По моїй області
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                        <label class="form-check-label sortRadio" for="flexRadioDefault2">
+                            По району області
+                        </label>
+                    </div>
+                </form>
+                <hr>
+                <form>
+                    <p>
+                        По типу допомоги:
+                    </p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                        <label class="form-check-label sortRadio" for="flexCheckDefault">
+                            Ліки
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                        <label class="form-check-label sortRadio" for="flexCheckChecked">
+                            Медичні прилади
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
+                        <label class="form-check-label sortRadio" for="flexCheckChecked">
+                            Харчування
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck4" checked>
+                        <label class="form-check-label sortRadio" for="flexCheckChecked">
+                            Вода
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck5" >
+                        <label class="form-check-label sortRadio" for="flexCheckChecked">
+                            Одяг
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck6" checked>
+                        <label class="form-check-label sortRadio" for="flexCheckChecked">
+                            Засоби самооборони
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck7">
+                        <label class="form-check-label sortRadio" for="flexCheckChecked">
+                            Засоби гігієни
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck8">
+                        <label class="form-check-label sortRadio" for="flexCheckChecked">
+                            Інше
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p class="textInstruction">
+            Основна функція головного меню це зображати список оголошень тих, хто потребує:
+        </p>
+        <div class="applicationCardMain infoApplication">
+            <div class="applicationHeader">
+                <div class="photoDate">
+                    <img class="mainProfileIcon" src="/views/usedPictures/male.svg" alt="user">
+                    <div>
+                        <p class="text3">Моє ім'я та прізвище</p>
+                        <p class="smallDate">22.04.2022 22:33</p>
+                    </div>
+                </div>
+                <div class="markButton">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Вказує на терміновість звернення" class="transparentButton">
+                        <i class="fa-solid fa-exclamation fa-xl"></i>
+                    </button>
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Позначка вказує на те, що оголошення про допомогу" class="transparentButton">
+                        <i class="fa-solid fa-heart-crack fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="applicationText">
+                <p>Я знаходжусь в...</p>
+                <p>Мені потрібні ліки</p>
+                <p>Інсулін 2 ампули</p>
+            </div>
+            <div class="buttonMain">
+                <button role="button" type="button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Натискаючи Ви можете допомогти конкретній людині"  class="btn">Допомогти</button>
+            </div>
+        </div>
+        <p class="textInstruction">
+            На двох сторінках для заповнення оголошень все насправді досить просто, Вам потрібно тільки зазначити потрібні пункти,
+             написати більш конкретно що Вас цікавить та перечитати дані, які автоматично стягуються з Вашого профілю. Якщо щось вказано
+             неправильно скасуйте створення оголошення, та виправте все в налаштуваннях на сторінці профілю. 
+        </p>
+        <div class="CenteredCard">
+            <form class = "items infoItem">
+                <h2 class="formH2">Ваша інформація з акаунту:</h2>
+                <hr>
+                <div class="info">
+                    <p>Ім'я: ім'я</p>
+                    <br>
+                    <p>Прізвище: прізвище</p>
+                    <br>
+                    <p>Місцезнаходження: область, район</p>
+                    <br>
+                    <p>Номер телефону: +38 *** ** *** **</p>
+                    <br>
+                    <p>Email: mail@gmail.com</p>
+                </div>
+            </form>
+        </div>
+        <p class="textInstruction">
+            Якщо ж все правильно, натисніть кнопку "створити", після чого виникне віконце з підтвердженням:
+        </p>
+        <div class="CenteredCard">
+            <div class="modal-content infoApplication">
+                <span>Чи впевнені Ви, що хочете створити оголошення?</span>
+                <hr>
+                <div class="modalButtons">
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Поверне Вас в оголошення для редагування" class="btn btn-dark">Відмінити</button>
+                    <button data-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" title data-bs-content="Створить оголошення та відобразить його у Вас в профілі та на головній сторінці" class="btn btn-dark">Підтвердити</button>
+                </div>
+            </div>
+        </div>
+        <p class="textInstruction">
+            Після підтвердження оголошення з'явиться у вас в профілі.
+        </p>
+    </div>
+    <hr class="divider">
+    <div>
+        <h1>Правила платформи:</h1>
+        <li>
+            Оскільки платформа не комерційна великі об’єми медикаментів чи чогось іншого передавати один 
+            одному заборонено.
+        </li>
+        <li>
+            Також серед типів допомоги немає і розділу передачі коштів, оскільки це може створити грошові
+            махінації всередині сайту.
+        </li>
+    </div>
+    <hr class="divider">
+    <div>
+        <h1>Чи безпечно надавати особисті дані?</h1>
+        <li>
+            В цілях безпеки користувачів під час війни безпосереднє місцеперебування того, хто потребує
+            чи волонтера не розкривається, воно залишається в системі лише як обласний район, що 
+            не дає зловмисникам навіть при спробі витягнути інформацію дізнатись, де знаходяться користувачі.
+        </li>
+        <li>
+            Ваші контактні дані інший користувач може отримати тільки в тому випадку, коли платформа вас
+            з'єднала для надавання або отримання допомоги. Не тільки інша людина буде бачити ваш телефон, 
+            але й ви будете бачити її у відповідь.
+        </li>
+        <li>
+            Свої волонтерські оголошення бачите лише Ви допоки платформа не з'єднає вас з іншим користувачем 
+            (Вас може з'єднати тільки з однією людиною, поки Ви не захочете завершити або скасувати це з'єднання).
+        </li>
+    </div>
+    <hr class="divider">
+    <div class="QandA">
+        <h1>Часті запитання:</h1>
+        <h2>Чому волонтерських оголошень немає на головній сторінці?</h2>
+        <p class="textInstruction">
+            Волонтерські оголошення Ви можете бачити лише свої та лише у своєму профілі, не зображення оголошень цього типу зумовлені
+            запобіганням зловживання можливостями платформи.
+        </p>
+        <hr class="divider2">
+        <h2>Чому назва і логотип сайту англійською, якщо Ви працюєте тільки в Україні?</h2>
+        <p class="textInstruction">
+            Заручниками Українсько-російської війни могли стати не лише українці, але й люди інших національностей, а оскільки
+            англійська мова є міжнародною, було прийняте рішення назвати платформу так.
+        </p>
+        <hr class="divider2">
+        <h2>Чи можна одночасно бути і волонтером і потребуючим?</h2>
+        <p class="textInstruction">
+            Так, платформа дозволяє одній людині приміряти на себе декілька ролей одночасно.
+        </p>
+    </div>
+</div>

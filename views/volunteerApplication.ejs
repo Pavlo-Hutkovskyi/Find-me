@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ukr">
+<%- include('head.ejs') %>
+<body>
+    <div class="helpDiv">
+        <section>
+            <div class="item">
+                <%- include('formPages/fillingForm.ejs') %>
+                <%- include('formPages/yourInfo.ejs') %>
+                <%- include('formPages/formButtons.ejs') %>
+            </div>
+        </section>
+    </div>
+    <%- include('confirmation.ejs') %>
+    <%- include('toast.ejs') %>
+    <%- include('frontScript.ejs') %>
+    </body>
+</html>
